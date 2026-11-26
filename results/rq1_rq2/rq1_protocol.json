@@ -1,0 +1,53 @@
+{
+  "dataset_manifest": "/kaggle/working/StepByStep/model_runs/corrected_2000_rq1_rq2_v1/model_input_manifest.json",
+  "models": {
+    "qwen7b": "Qwen/Qwen2.5-7B-Instruct",
+    "llama8b": "meta-llama/Llama-3.1-8B-Instruct"
+  },
+  "split_seeds": [
+    42,
+    43,
+    44
+  ],
+  "bootstrap_replicates": 1000,
+  "binary_task": {
+    "class_0": "reversible",
+    "class_1": "irreversible",
+    "partial_rows": "excluded"
+  },
+  "metrics": [
+    "balanced accuracy",
+    "macro-F1",
+    "AUROC (binary and macro one-vs-rest three-class)"
+  ],
+  "three_class_task": [
+    "reversible",
+    "partial",
+    "irreversible"
+  ],
+  "grouping": "pair/scenario unioned with exact duplicate state-action inputs",
+  "features": [
+    "last action token at each layer",
+    "mean over action tokens at each layer"
+  ],
+  "controls": [
+    "majority",
+    "lexical action-only bag-of-words",
+    "shuffled labels",
+    "random action-verb control task"
+  ],
+  "ablations": [
+    "minimal-pair-only versus all rows",
+    "last-token versus mean-token",
+    "binary versus three-class"
+  ],
+  "cross_environment_transfer": "not estimable: only one ScienceWorld row is present",
+  "software_versions": {
+    "numpy": "2.1.3",
+    "scikit-learn": "1.6.1",
+    "torch": "2.11.0+cu130",
+    "transformers": "5.20.2",
+    "matplotlib": "3.10.0",
+    "tqdm": "4.67.3"
+  }
+}

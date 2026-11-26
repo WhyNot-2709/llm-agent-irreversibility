@@ -1,0 +1,16 @@
+{
+  "qwen7b": {
+    "status": "complete",
+    "rows": 2000,
+    "layers": 29,
+    "hidden_width": 3584,
+    "recovered_extraction_error_records": 0
+  },
+  "llama8b": {
+    "status": "complete",
+    "rows": 2000,
+    "layers": 33,
+    "hidden_width": 4096,
+    "recovered_extraction_error_records": 0
+  }
+}

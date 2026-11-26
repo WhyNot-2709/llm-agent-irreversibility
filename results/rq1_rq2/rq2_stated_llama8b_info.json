@@ -1,0 +1,14 @@
+{
+  "model_name": "meta-llama/Llama-3.1-8B-Instruct",
+  "rows": 2000,
+  "torch_version": "2.11.0+cu130",
+  "transformers_version": "5.20.2",
+  "answer_token_ids_ABC": [
+    32,
+    33,
+    34
+  ],
+  "prompt_task": "Carry out the requested operation using the supplied state.",
+  "recovered_error_records": 0,
+  "completed_utc": "2026-11-24T06:54:12.160861+00:00"
+}

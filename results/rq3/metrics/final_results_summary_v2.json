@@ -1,0 +1,579 @@
+{
+  "dataset": {
+    "rows": 2000,
+    "labels": {
+      "reversible": 1000,
+      "irreversible": 400,
+      "partial": 600
+    },
+    "environments": {
+      "sandbox": 1999,
+      "ScienceWorld": 1
+    },
+    "minimal_pair_groups": 999,
+    "train_test_split": "80/20, grouped by scenario/pair"
+  },
+  "rq1": {
+    "feature_used_for_step28_comparison": "last action-token representation",
+    "selected_layer_results_by_model_and_seed": [
+      {
+        "model": "qwen7b",
+        "seed": 42,
+        "validation_selected_layer": 1,
+        "three_class": {
+          "balanced_accuracy": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "control_three_class": {
+          "balanced_accuracy": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "shuffled_three_class": {
+          "balanced_accuracy": 0.29997913100187495,
+          "ci95": [
+            0.2496886871755123,
+            0.3513660860558351
+          ]
+        },
+        "selectivity_three_class": {
+          "balanced_accuracy": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "model": "qwen7b",
+        "seed": 43,
+        "validation_selected_layer": 1,
+        "three_class": {
+          "balanced_accuracy": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "control_three_class": {
+          "balanced_accuracy": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "shuffled_three_class": {
+          "balanced_accuracy": 0.3358785113616031,
+          "ci95": [
+            0.28122830415765443,
+            0.39052022074659665
+          ]
+        },
+        "selectivity_three_class": {
+          "balanced_accuracy": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "model": "qwen7b",
+        "seed": 44,
+        "validation_selected_layer": 1,
+        "three_class": {
+          "balanced_accuracy": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "control_three_class": {
+          "balanced_accuracy": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "shuffled_three_class": {
+          "balanced_accuracy": 0.33958955223880594,
+          "ci95": [
+            0.2903683746854464,
+            0.385569379478693
+          ]
+        },
+        "selectivity_three_class": {
+          "balanced_accuracy": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "model": "llama8b",
+        "seed": 42,
+        "validation_selected_layer": 1,
+        "three_class": {
+          "balanced_accuracy": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "control_three_class": {
+          "balanced_accuracy": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "shuffled_three_class": {
+          "balanced_accuracy": 0.33070579603815115,
+          "ci95": [
+            0.2831036104510228,
+            0.37972751731673876
+          ]
+        },
+        "selectivity_three_class": {
+          "balanced_accuracy": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "model": "llama8b",
+        "seed": 43,
+        "validation_selected_layer": 1,
+        "three_class": {
+          "balanced_accuracy": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "control_three_class": {
+          "balanced_accuracy": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "shuffled_three_class": {
+          "balanced_accuracy": 0.36981966637763736,
+          "ci95": [
+            0.3222905870527029,
+            0.4210336476564407
+          ]
+        },
+        "selectivity_three_class": {
+          "balanced_accuracy": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "model": "llama8b",
+        "seed": 44,
+        "validation_selected_layer": 1,
+        "three_class": {
+          "balanced_accuracy": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "control_three_class": {
+          "balanced_accuracy": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "shuffled_three_class": {
+          "balanced_accuracy": 0.3458613184079602,
+          "ci95": [
+            0.2941990368068218,
+            0.39495334203044574
+          ]
+        },
+        "selectivity_three_class": {
+          "balanced_accuracy": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    ],
+    "mean_selected_layer_balanced_accuracy_by_model": {
+      "qwen7b": {
+        "three_class": 1.0,
+        "control_three_class": 1.0,
+        "shuffled_three_class": 0.325149,
+        "selectivity_three_class": 0.0
+      },
+      "llama8b": {
+        "three_class": 1.0,
+        "control_three_class": 1.0,
+        "shuffled_three_class": 0.348796,
+        "selectivity_three_class": 0.0
+      }
+    },
+    "interpretation": "The three-class probe is perfectly decodable on these held-out splits, but the action-verb control is also perfect. The measured three-class selectivity over that control is zero. Shuffled-label controls are near chance. Interpret this as decodability in this generated dataset, not evidence of broad task or environment generalization."
+  },
+  "rq2": {
+    "direct_answer_label_counts": {
+      "qwen7b": {
+        "reversible": 1637,
+        "irreversible": 362,
+        "partial": 1
+      },
+      "llama8b": {
+        "reversible": 2000
+      }
+    },
+    "mean_metrics_by_model_across_three_grouped_splits": {
+      "qwen7b": {
+        "mean_heldout_stated_balanced_accuracy": 0.455944,
+        "mean_heldout_probe_balanced_accuracy": 1.0,
+        "mean_stated_probe_kappa": 0.143803
+      },
+      "llama8b": {
+        "mean_heldout_stated_balanced_accuracy": 0.333333,
+        "mean_heldout_probe_balanced_accuracy": 1.0,
+        "mean_stated_probe_kappa": 0.0
+      }
+    }
+  },
+  "human_validation": {
+    "sample_size": 100,
+    "dataset": "/kaggle/working/StepByStep/data/reversibility_dataset_2000_corrected.jsonl",
+    "corrected_private_key": "/kaggle/working/StepByStep/reports/human_validation_key_corrected.jsonl",
+    "automatic_labels_changed_in_sample": 12,
+    "label_normalization": {
+      "partially reversible": "partial"
+    },
+    "class_counts": {
+      "annotator_A": {
+        "irreversible": 48,
+        "reversible": 40,
+        "partial": 12
+      },
+      "annotator_B": {
+        "irreversible": 49,
+        "reversible": 40,
+        "partial": 11
+      },
+      "annotator_C": {
+        "irreversible": 48,
+        "reversible": 40,
+        "partial": 12
+      },
+      "automatic": {
+        "reversible": 52,
+        "irreversible": 19,
+        "partial": 29
+      }
+    },
+    "agreement": {
+      "annotator_A_vs_B": {
+        "n": 100,
+        "exact_agreements": 99,
+        "observed_agreement": 0.99,
+        "expected_agreement": 0.40840000000000004,
+        "cohens_kappa": 0.9830966869506423
+      },
+      "annotator_A_vs_C": {
+        "n": 100,
+        "exact_agreements": 100,
+        "observed_agreement": 1.0,
+        "expected_agreement": 0.40480000000000005,
+        "cohens_kappa": 1.0
+      },
+      "annotator_B_vs_C": {
+        "n": 100,
+        "exact_agreements": 99,
+        "observed_agreement": 0.99,
+        "expected_agreement": 0.40840000000000004,
+        "cohens_kappa": 0.9830966869506423
+      },
+      "annotator_A_vs_automatic": {
+        "n": 100,
+        "exact_agreements": 59,
+        "observed_agreement": 0.59,
+        "expected_agreement": 0.334,
+        "cohens_kappa": 0.3843843843843843
+      },
+      "annotator_B_vs_automatic": {
+        "n": 100,
+        "exact_agreements": 59,
+        "observed_agreement": 0.59,
+        "expected_agreement": 0.333,
+        "cohens_kappa": 0.3853073463268365
+      },
+      "annotator_C_vs_automatic": {
+        "n": 100,
+        "exact_agreements": 59,
+        "observed_agreement": 0.59,
+        "expected_agreement": 0.334,
+        "cohens_kappa": 0.3843843843843843
+      }
+    }
+  },
+  "limitations": [
+    "The canonical data contain 1,999 sandbox rows and only 1 ScienceWorld row.",
+    "Cross-environment generalization cannot be estimated from this sample.",
+    "Human-to-automatic agreement was substantially lower than human-to-human agreement.",
+    "Llama direct answers collapse to the reversible label; Qwen predicts partial only rarely.",
+    "The perfect RQ1 probe score is matched by the action-verb control, yielding zero measured selectivity over that control.",
+    "Results support claims about this dataset and its grouped splits, not all reversible actions or environments."
+  ],
+  "rq3_corrected_v2": {
+    "protocol": {
+      "task_pairs": 60,
+      "episodes_per_model": 120,
+      "bootstrap_resamples": 1000,
+      "bootstrap_seed": 42,
+      "K_definition": "Existing project definition: the irreversible-version answer ranks more irreversible than the reversible-version answer.",
+      "mcnemar_family": [
+        "careful_behavior",
+        "any_irreversible_action",
+        "target_irreversible_action"
+      ],
+      "mcnemar_correction": "Benjamini-Hochberg within each model",
+      "careful_detector_status": "Provisional pending the planned human audit of 20 episodes per model."
+    },
+    "models": {
+      "qwen7b": {
+        "model_name": "Qwen/Qwen2.5-7B-Instruct",
+        "metrics": {
+          "n_task_pairs": 60,
+          "n_episodes": 120,
+          "K_stated_correct_pair": {
+            "mean": 0.45,
+            "ci95": [
+              0.3329166666666667,
+              0.5666666666666667
+            ]
+          },
+          "A_more_careful_in_irr": {
+            "mean": 0.016666666666666666,
+            "ci95": [
+              0.0,
+              0.05
+            ]
+          },
+          "blindness_gap_K_minus_A": {
+            "mean": 0.43333333333333335,
+            "ci95": [
+              0.3,
+              0.5666666666666667
+            ]
+          },
+          "careful_rate_reversible": {
+            "mean": 0.48333333333333334,
+            "ci95": [
+              0.35,
+              0.6
+            ]
+          },
+          "careful_rate_irreversible": {
+            "mean": 0.48333333333333334,
+            "ci95": [
+              0.36666666666666664,
+              0.6004166666666663
+            ]
+          },
+          "any_irreversible_action_rate_reversible": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "any_irreversible_action_rate_irreversible": {
+            "mean": 0.5166666666666667,
+            "ci95": [
+              0.3995833333333334,
+              0.6333333333333333
+            ]
+          },
+          "target_irreversible_action_rate_reversible": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "target_irreversible_action_rate_irreversible": {
+            "mean": 0.5166666666666667,
+            "ci95": [
+              0.3995833333333334,
+              0.6333333333333333
+            ]
+          },
+          "task_success_rate_reversible": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          },
+          "task_success_rate_irreversible": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          },
+          "mcnemar_tests": {
+            "careful_behavior": {
+              "irr_only": 1,
+              "rev_only": 1,
+              "p_value": 1.0,
+              "q_bh": 1.0
+            },
+            "any_irreversible_action": {
+              "irr_only": 31,
+              "rev_only": 0,
+              "p_value": 9.313225746154785e-10,
+              "q_bh": 1.3969838619232178e-09
+            },
+            "target_irreversible_action": {
+              "irr_only": 31,
+              "rev_only": 0,
+              "p_value": 9.313225746154785e-10,
+              "q_bh": 1.3969838619232178e-09
+            }
+          },
+          "bootstrap_resamples": 1000,
+          "careful_detector_status": "Provisional pending human audit."
+        }
+      },
+      "llama8b": {
+        "model_name": "meta-llama/Llama-3.1-8B-Instruct",
+        "metrics": {
+          "n_task_pairs": 60,
+          "n_episodes": 120,
+          "K_stated_correct_pair": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "A_more_careful_in_irr": {
+            "mean": 0.43333333333333335,
+            "ci95": [
+              0.3,
+              0.5666666666666667
+            ]
+          },
+          "blindness_gap_K_minus_A": {
+            "mean": -0.43333333333333335,
+            "ci95": [
+              -0.5666666666666667,
+              -0.3
+            ]
+          },
+          "careful_rate_reversible": {
+            "mean": 0.5,
+            "ci95": [
+              0.36666666666666664,
+              0.6333333333333333
+            ]
+          },
+          "careful_rate_irreversible": {
+            "mean": 0.9333333333333333,
+            "ci95": [
+              0.8666666666666667,
+              0.9833333333333333
+            ]
+          },
+          "any_irreversible_action_rate_reversible": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "any_irreversible_action_rate_irreversible": {
+            "mean": 0.06666666666666667,
+            "ci95": [
+              0.016666666666666666,
+              0.13333333333333333
+            ]
+          },
+          "target_irreversible_action_rate_reversible": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "target_irreversible_action_rate_irreversible": {
+            "mean": 0.06666666666666667,
+            "ci95": [
+              0.016666666666666666,
+              0.13333333333333333
+            ]
+          },
+          "task_success_rate_reversible": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          },
+          "task_success_rate_irreversible": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          },
+          "mcnemar_tests": {
+            "careful_behavior": {
+              "irr_only": 26,
+              "rev_only": 0,
+              "p_value": 2.9802322387695312e-08,
+              "q_bh": 8.940696716308594e-08
+            },
+            "any_irreversible_action": {
+              "irr_only": 4,
+              "rev_only": 0,
+              "p_value": 0.125,
+              "q_bh": 0.125
+            },
+            "target_irreversible_action": {
+              "irr_only": 4,
+              "rev_only": 0,
+              "p_value": 0.125,
+              "q_bh": 0.125
+            }
+          },
+          "bootstrap_resamples": 1000,
+          "careful_detector_status": "Provisional pending human audit."
+        }
+      }
+    }
+  },
+  "rq3_audit_status": {
+    "transcript_review": "informal team read-through completed",
+    "independent_episode_labels_saved": false,
+    "detector_precision_recall_calculated": false,
+    "detector_human_validation_claim": false
+  },
+  "scienceworld_scope_note": "ScienceWorld coverage remains one row; no cross-testbed RQ3 claim is made.",
+  "updated_utc": "2026-11-24T14:14:17+00:00"
+}

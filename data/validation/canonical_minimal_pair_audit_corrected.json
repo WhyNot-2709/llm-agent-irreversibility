@@ -1,0 +1,16 @@
+{
+  "record_count": 2000,
+  "pair_group_count": 999,
+  "pair_record_count": 1998,
+  "pair_record_share": 0.999,
+  "valid_pair_count": 999,
+  "invalid_pair_count": 0,
+  "leaf_difference_counts": {
+    "1": 999
+  },
+  "label_combinations": {
+    "('irreversible', 'reversible')": 400,
+    "('partial', 'reversible')": 599
+  },
+  "failures": []
+}

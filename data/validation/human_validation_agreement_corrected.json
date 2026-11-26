@@ -1,0 +1,75 @@
+{
+  "sample_size": 100,
+  "dataset": "/kaggle/working/StepByStep/data/reversibility_dataset_2000_corrected.jsonl",
+  "corrected_private_key": "/kaggle/working/StepByStep/reports/human_validation_key_corrected.jsonl",
+  "automatic_labels_changed_in_sample": 12,
+  "label_normalization": {
+    "partially reversible": "partial"
+  },
+  "class_counts": {
+    "annotator_A": {
+      "irreversible": 48,
+      "reversible": 40,
+      "partial": 12
+    },
+    "annotator_B": {
+      "irreversible": 49,
+      "reversible": 40,
+      "partial": 11
+    },
+    "annotator_C": {
+      "irreversible": 48,
+      "reversible": 40,
+      "partial": 12
+    },
+    "automatic": {
+      "reversible": 52,
+      "irreversible": 19,
+      "partial": 29
+    }
+  },
+  "agreement": {
+    "annotator_A_vs_B": {
+      "n": 100,
+      "exact_agreements": 99,
+      "observed_agreement": 0.99,
+      "expected_agreement": 0.40840000000000004,
+      "cohens_kappa": 0.9830966869506423
+    },
+    "annotator_A_vs_C": {
+      "n": 100,
+      "exact_agreements": 100,
+      "observed_agreement": 1.0,
+      "expected_agreement": 0.40480000000000005,
+      "cohens_kappa": 1.0
+    },
+    "annotator_B_vs_C": {
+      "n": 100,
+      "exact_agreements": 99,
+      "observed_agreement": 0.99,
+      "expected_agreement": 0.40840000000000004,
+      "cohens_kappa": 0.9830966869506423
+    },
+    "annotator_A_vs_automatic": {
+      "n": 100,
+      "exact_agreements": 59,
+      "observed_agreement": 0.59,
+      "expected_agreement": 0.334,
+      "cohens_kappa": 0.3843843843843843
+    },
+    "annotator_B_vs_automatic": {
+      "n": 100,
+      "exact_agreements": 59,
+      "observed_agreement": 0.59,
+      "expected_agreement": 0.333,
+      "cohens_kappa": 0.3853073463268365
+    },
+    "annotator_C_vs_automatic": {
+      "n": 100,
+      "exact_agreements": 59,
+      "observed_agreement": 0.59,
+      "expected_agreement": 0.334,
+      "cohens_kappa": 0.3843843843843843
+    }
+  }
+}

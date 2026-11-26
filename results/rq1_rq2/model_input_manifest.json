@@ -1,0 +1,86 @@
+{
+  "run_id": "corrected_2000_rq1_rq2_v1",
+  "canonical_path": "/kaggle/working/StepByStep/data/reversibility_dataset_2000_corrected.jsonl",
+  "canonical_sha256": "2d87f74b069cceca3a5e1909ea36546e26d6ae3cab37f86a397e1e9980a08805",
+  "rows": 2000,
+  "labels": {
+    "reversible": 1000,
+    "irreversible": 400,
+    "partial": 600
+  },
+  "environments": {
+    "sandbox": 1999,
+    "ScienceWorld": 1
+  },
+  "corrected_rows": 200,
+  "minimal_pair_groups": 999,
+  "minimal_pair_records": 1998,
+  "exact_duplicate_input_groups": 10,
+  "leakage_safe_evaluation_groups": 996,
+  "horizon_label_counts": {
+    "h1": {
+      "reversible": 1000,
+      "irreversible": 400,
+      "partial": 600
+    },
+    "h2": {
+      "reversible": 1000,
+      "irreversible": 400,
+      "partial": 600
+    },
+    "h3": {
+      "reversible": 1000,
+      "irreversible": 400,
+      "partial": 600
+    }
+  },
+  "horizon_labels_identical_rowwise": true,
+  "neutral_task": "Carry out the requested operation using the supplied state.",
+  "action_normalization": "sandbox function call converted to canonical JSON tool/args; ScienceWorld phrase wrapped as scienceworld_action",
+  "split_diagnostics": [
+    {
+      "seed": 42,
+      "train_rows": 1600,
+      "test_rows": 400,
+      "test_label_counts": {
+        "reversible": 200,
+        "irreversible": 79,
+        "partial": 121
+      },
+      "overlap_groups": 0
+    },
+    {
+      "seed": 43,
+      "train_rows": 1596,
+      "test_rows": 404,
+      "test_label_counts": {
+        "reversible": 202,
+        "irreversible": 82,
+        "partial": 120
+      },
+      "overlap_groups": 0
+    },
+    {
+      "seed": 44,
+      "train_rows": 1596,
+      "test_rows": 404,
+      "test_label_counts": {
+        "reversible": 202,
+        "irreversible": 82,
+        "partial": 120
+      },
+      "overlap_groups": 0
+    }
+  ],
+  "evaluation_splits_path": "/kaggle/working/StepByStep/model_runs/corrected_2000_rq1_rq2_v1/evaluation_splits.json",
+  "models": {
+    "qwen7b": "Qwen/Qwen2.5-7B-Instruct",
+    "llama8b": "meta-llama/Llama-3.1-8B-Instruct"
+  },
+  "probe_splits": [
+    42,
+    43,
+    44
+  ],
+  "bootstrap_replicates": 1000
+}

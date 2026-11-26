@@ -1,0 +1,12 @@
+{
+  "qwen7b": {
+    "status": "complete",
+    "rows": 2000,
+    "recovered_error_records": 0
+  },
+  "llama8b": {
+    "status": "complete",
+    "rows": 2000,
+    "recovered_error_records": 0
+  }
+}

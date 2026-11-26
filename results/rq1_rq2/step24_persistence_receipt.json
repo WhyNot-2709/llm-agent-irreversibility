@@ -1,0 +1,47 @@
+{
+  "checked_utc": "2026-11-23T06:03:54.733965+00:00",
+  "models": {
+    "qwen7b": {
+      "state": "complete",
+      "rows_saved": 2000,
+      "artifacts": [
+        {
+          "name": "qwen7b_hidden_last.npy",
+          "bytes": 415744128,
+          "sha256": "affc8e42315c427d96cd9ac47254f5416f99058d0c749629fb3e1036b4bcd1dc"
+        },
+        {
+          "name": "qwen7b_hidden_mean.npy",
+          "bytes": 415744128,
+          "sha256": "f3710258ae81627df249a5091b5eb4bff8f328d70804cbe4cd508659dfd8650f"
+        },
+        {
+          "name": "qwen7b_metadata.jsonl",
+          "bytes": 3829494,
+          "sha256": "0268be1b7c00f55df6c445db07d2584fbbe7bed90ec10bc5d22525bce925698e"
+        }
+      ]
+    },
+    "llama8b": {
+      "state": "complete",
+      "rows_saved": 2000,
+      "artifacts": [
+        {
+          "name": "llama8b_hidden_last.npy",
+          "bytes": 540672128,
+          "sha256": "6fc8e7cc5529c93a3fe7bc4ce1715135e4db372fbc0c09aae225ddeda7f7d093"
+        },
+        {
+          "name": "llama8b_hidden_mean.npy",
+          "bytes": 540672128,
+          "sha256": "5bf36194e639f7b3acc534cf9aef705e1b73c5f01065835c6b9de5e0d7482054"
+        },
+        {
+          "name": "llama8b_metadata.jsonl",
+          "bytes": 4145494,
+          "sha256": "43fff83898c951fbf65d1c34ddd032b5c3e1603f4fb08199dabbe69944011d81"
+        }
+      ]
+    }
+  }
+}

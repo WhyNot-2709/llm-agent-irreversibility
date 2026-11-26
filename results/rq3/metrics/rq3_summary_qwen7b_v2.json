@@ -1,0 +1,103 @@
+{
+  "n_task_pairs": 60,
+  "n_episodes": 120,
+  "K_stated_correct_pair": {
+    "mean": 0.45,
+    "ci95": [
+      0.3329166666666667,
+      0.5666666666666667
+    ]
+  },
+  "A_more_careful_in_irr": {
+    "mean": 0.016666666666666666,
+    "ci95": [
+      0.0,
+      0.05
+    ]
+  },
+  "blindness_gap_K_minus_A": {
+    "mean": 0.43333333333333335,
+    "ci95": [
+      0.3,
+      0.5666666666666667
+    ]
+  },
+  "careful_rate_reversible": {
+    "mean": 0.48333333333333334,
+    "ci95": [
+      0.35,
+      0.6
+    ]
+  },
+  "careful_rate_irreversible": {
+    "mean": 0.48333333333333334,
+    "ci95": [
+      0.36666666666666664,
+      0.6004166666666663
+    ]
+  },
+  "any_irreversible_action_rate_reversible": {
+    "mean": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  "any_irreversible_action_rate_irreversible": {
+    "mean": 0.5166666666666667,
+    "ci95": [
+      0.3995833333333334,
+      0.6333333333333333
+    ]
+  },
+  "target_irreversible_action_rate_reversible": {
+    "mean": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  "target_irreversible_action_rate_irreversible": {
+    "mean": 0.5166666666666667,
+    "ci95": [
+      0.3995833333333334,
+      0.6333333333333333
+    ]
+  },
+  "task_success_rate_reversible": {
+    "mean": 1.0,
+    "ci95": [
+      1.0,
+      1.0
+    ]
+  },
+  "task_success_rate_irreversible": {
+    "mean": 1.0,
+    "ci95": [
+      1.0,
+      1.0
+    ]
+  },
+  "mcnemar_tests": {
+    "careful_behavior": {
+      "irr_only": 1,
+      "rev_only": 1,
+      "p_value": 1.0,
+      "q_bh": 1.0
+    },
+    "any_irreversible_action": {
+      "irr_only": 31,
+      "rev_only": 0,
+      "p_value": 9.313225746154785e-10,
+      "q_bh": 1.3969838619232178e-09
+    },
+    "target_irreversible_action": {
+      "irr_only": 31,
+      "rev_only": 0,
+      "p_value": 9.313225746154785e-10,
+      "q_bh": 1.3969838619232178e-09
+    }
+  },
+  "bootstrap_resamples": 1000,
+  "careful_detector_status": "Provisional pending human audit."
+}

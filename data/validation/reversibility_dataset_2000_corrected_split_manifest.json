@@ -1,0 +1,16 @@
+{
+  "dataset": "/kaggle/working/StepByStep/data/reversibility_dataset_2000_corrected.jsonl",
+  "split_seed": 42,
+  "split_unit": "scenario_id",
+  "train_rows": 1600,
+  "test_rows": 400,
+  "train_scenarios": 801,
+  "test_scenarios": 200,
+  "scenario_overlap": 0,
+  "pair_id_overlap": 0,
+  "labels": {
+    "reversible": 1000,
+    "irreversible": 400,
+    "partial": 600
+  }
+}

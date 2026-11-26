@@ -1,0 +1,20 @@
+{
+  "model_name": "Qwen/Qwen2.5-7B-Instruct",
+  "rows": 2000,
+  "layers_including_embedding": 29,
+  "hidden_width": 3584,
+  "last_shape": [
+    2000,
+    29,
+    3584
+  ],
+  "mean_shape": [
+    2000,
+    29,
+    3584
+  ],
+  "canonical_sha256": "2d87f74b069cceca3a5e1909ea36546e26d6ae3cab37f86a397e1e9980a08805",
+  "torch_version": "2.11.0+cu130",
+  "transformers_version": "5.20.2",
+  "recovered_extraction_error_records": 0
+}
