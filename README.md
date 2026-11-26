@@ -64,11 +64,11 @@ Human annotation agreement was assessed on a 100-record sample. It does not mean
 - environment/: pinned CPU-side requirements.
 - notebooks/: the user-confirmed project notebook.
 - protocol/: analysis plan and decision rules.
-- report/: editable IEEE-style paper source and figures.
+- report/: editable IEEE-style paper source, the current compiled report PDF, its BibTeX bibliography, and figures.
 - results/rq1_rq2/: probe and direct-answer artifacts.
 - results/rq3/: paired-task logs and derived metrics.
 
-The notebook contains the project workflow and historical exploration. It currently includes Kaggle-specific paths and older diagnostic cells, so it may need path updates and careful cell selection before it can be rerun outside the original Kaggle workspace. The report and notebook are still being revised; this repository snapshot may not include the latest edits.
+The notebook contains the project workflow and historical exploration. It currently includes Kaggle-specific paths and older diagnostic cells, so it may need path updates and careful cell selection before it can be rerun outside the original Kaggle workspace. The compiled report PDF in `report/ADNN_Irreversibility_Report.pdf` is the current report copy. The notebook and editable LaTeX source may continue to change independently.
 
 ## Reproduction notes
 
@@ -81,4 +81,3 @@ The committed figures and results are saved outputs. The notebook has a plotting
 ## License and reuse
 
 No project-wide license is included yet. Check the source terms for the dataset and any third-party material, and agree on a license with the project authors before granting reuse rights.
-
