@@ -77,7 +77,3 @@ The included requirements file pins a CPU environment. The saved model feature e
 Model downloads may require Hugging Face access. Supply credentials through a local environment variable or a notebook secret store. Never commit access tokens, private annotation keys, or other credentials.
 
 The committed figures and results are saved outputs. The notebook has a plotting cell for the RQ1 layer profiles, but it does not currently regenerate the final named paper figures or the RQ3 gap plot from the files in this repository. Add those plotting cells to the notebook; a separate script is optional. A complete GPU environment specification is not currently included.
-
-## License and reuse
-
-No project-wide license is included yet. Check the source terms for the dataset and any third-party material, and agree on a license with the project authors before granting reuse rights.
