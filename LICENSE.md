@@ -1,7 +1,4 @@
-# Proposed project licensing (DRAFT)
-
-> **Not an active license. Do not publish this draft as a grant of rights.** The three project authors must approve the scope and terms, and third-party terms must be checked, before this is replaced with an active license file.
-
+# Proposed project licensing 
 ## Proposed scope
 
 - Original source code: MIT License.
